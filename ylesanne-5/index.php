@@ -1,3 +1,10 @@
+    <?php
+    	session_start()
+    	?>
+    <?php	
+    	$_SESSION["username"] = "Syret";
+    	$_SESSION["password"] = "parool";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,8 +13,8 @@
   </head>
 
   <body>
-    <!-- Kustuta see funktsioon (print_r() koos <pre> elemendiga) pärast seda, kui oled veendunud, et programm töötab. -->
-    <pre><?php print_r($_SESSION); ?></pre>
+
+
     <a href="result.php">Vaata tulemust</a>
   </body>
 </html>
