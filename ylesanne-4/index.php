@@ -6,18 +6,17 @@
   </head>
 
   <body>
-    <!-- Kustuta see funktsioon (print_r() koos <pre> elemendiga) pärast seda, kui oled veendunud, et programm töötab. -->
-    <pre><?php print_r($_COOKIE); ?></pre>
+  
     <?php
-    	/*$name = "arvestus";
+    	$name = "arvestus";
     	$value = "Cookie on olemas";
     	$expire = time() + 20;
-    	setcookie($name, $value, $expire);*/
+    	setcookie($name, $value, $expire);
     	if (isset($_COOKIE["arvestus"])) {
-    		echo "Cookie-t ei ole!";
+    		echo $value;
     	}
     	else{
-    		echo "polkiujhytg";
+    		echo "Cookie-t ei ole!";
     	}
     ?>
   </body>
