@@ -6,5 +6,9 @@
   </head>
 
   <body>
+  	<?php $page_link = "result.php";
+    $username = "Syret";
+    $age = 21; ?>
+    <a href="<?php echo $page_link.'?name='.$username."&age=".$age; ?>">Edasi</a>
   </body>
 </html>
